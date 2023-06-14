@@ -1,0 +1,17 @@
+﻿@model Vidly.Models.Customer
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Id == 0)
+{
+    <p>We don't have any customer yet.'</p>
+}
+else
+{
+   <p>@Model.Name</p>
+
+}
+
+
